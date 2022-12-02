@@ -4,7 +4,7 @@ class FinalDestination::Resolver
   @mutex = Mutex.new
   def self.lookup(addr, timeout: nil)
     Rails.logger.warn "======== OpenIdResolverLookup Override ========="
-    timeout = 1
+    timeout = 0.01
     @mutex.synchronize do
       @result = nil
 
