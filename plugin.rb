@@ -12,6 +12,7 @@ enabled_site_setting :openid_connect_enabled
 require_relative "lib/openid_connect_faraday_formatter"
 require_relative "lib/omniauth_open_id_connect"
 require_relative "lib/openid_connect_authenticator"
+require_relative "lib/test"
 
 GlobalSetting.add_default :openid_connect_request_timeout_seconds, 10
 
