@@ -33,5 +33,5 @@ class FinalDestination::Resolver
             end               
         end
     end
-    prepend OpenIdResolverLookup
+    singleton_class.prepend OpenIdResolverLookup
 end
