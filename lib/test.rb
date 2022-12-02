@@ -1,3 +1,5 @@
+require "final_destination"
+
 class FinalDestination::Resolver
     module OpenIdResolverLookup
         def self.lookup(addr, timeout: nil)
