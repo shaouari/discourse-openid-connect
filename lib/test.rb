@@ -3,6 +3,7 @@ require "final_destination"
 class FinalDestination::Resolver
   @mutex = Mutex.new
   def self.lookup(addr, timeout: nil)
+    Rails.logger.warn "======== OpenIdResolverLookup Override ========="
     timeout = 1
     @mutex.synchronize do
       @result = nil
